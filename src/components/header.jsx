@@ -12,12 +12,18 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div>
-      <h1>App name</h1>
-      <NavLink to="/" activeClassName="is-active" exact>App</NavLink>
-      <NavLink to="/Add" activeClassName="is-active">Add</NavLink>
+      <div className="top-bar">
+        <div className="top-bar-left">
+          <h1>App name</h1>
+        </div>
+        <div className="top-bar-right">
+          <ul className="nav">
+            <li><NavLink to="/" activeClassName="is-active" exact>App</NavLink></li>
+            <li><NavLink to="/Add" activeClassName="is-active">Add</NavLink></li>
+          </ul>
+        </div>
       </div>
-      
+
     );
   }
 }

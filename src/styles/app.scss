@@ -1,11 +1,12 @@
+@import "./navbar.scss";
+
+
+body {
+  background: #fff;
+  padding: 0px;
+}
 
 h2 {
-    color: black;
+  color: black;
 }
 
-#anime {
-    width: 25%;
-    height: 25%;
-    align-content: center;
-    background-color: black;
-}

@@ -1,0 +1,60 @@
+.nav {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .nav * {
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+  }
+  
+  .nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1em;
+    padding: 0;
+  }
+  
+  .nav a {
+    padding: 0.5em 0.8em;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .nav a::before,
+  .nav a:after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: "";
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    right: 0;
+    top: 0;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a::after {
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: translate(-100%, 50%);
+  }
+  
+  a:hover::before,
+  a:hover:after {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  
